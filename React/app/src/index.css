@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+
+:root {
+    --first-color: #E3F8FF;
+    --second-color: #b6ebed;
+    --third-color: #FFE8DF;
+    --accent-color: #FF5151;
+    --dark-color: #161616;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background: #fff;
+}
+
+.shop-title {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.shop-title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 72px;
+    height: 2px;
+    background: var(--dark-color);
+    margin-left: .5rem;
+}
+
+/* Card */
+.shop-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: .5s;
+    min-height: 360px;
+}
+
+.bg-1 {
+    background: var(--first-color);
+}
+
+.bg-2 {
+    background: var(--second-color);
+}
+
+.bg-3 {
+    background: var(--third-color);
+}
+
+.bg-4 {
+    background: var(--second-color);
+}
+
+/* Image */
+.shop-card__img {
+    width: 180px;
+    padding: 3rem 0;
+    transition: .5s;
+}
+
+.shop-card__img img {
+    width: 100%;
+    display: block;
+}
+
+/* Vertical Name */
+.shop-card__name {
+    position: absolute;
+    left: -56px;
+    top: 0;
+    width: 56px;
+    height: 100%;
+    background: var(--dark-color);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    transition: .5s;
+}
+
+.shop-card__name p {
+    margin: 0;
+}
+
+/* Price */
+.shop-card__precis {
+    width: 100%;
+    transition: .5s;
+}
+
+.shop-card__preci--before {
+    color: var(--accent-color);
+    font-size: .75rem;
+    text-decoration: line-through;
+}
+
+.shop-card__preci--now {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* Icons */
+.shop-card__icon {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+}
+
+.shop-card__icon:hover {
+    color: var(--accent-color);
+}
+
+/* Hover */
+.shop-card:hover {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+}
+
+.shop-card:hover .shop-card__name {
+    left: 0;
+}
+
+.shop-card:hover .shop-card__img {
+    transform: rotate(30deg);
+    margin-left: 3.5rem;
+}
+
+.shop-card:hover .shop-card__precis {
+    margin-left: 3.5rem;
+    padding: 0 1rem;
+}
+
+/* ------------  */
+.card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Model Component */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-card {
+    width: 650px;
+    max-width: 95%;
+    border-radius: 15px;
+}
+
+.modal-body-custom {
+    max-height: 65vh;
+    overflow-y: auto;
+}
+
+.modal-body-custom::-webkit-scrollbar {
+    width: 6px;
+}
+
+.modal-body-custom::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 10px;
+}
+
+/* ----------------------- */
+
+.dashboard-wrapper {
+    height: calc(100vh - 80px);
+    overflow: hidden;
+    /* background: red; */
+    padding-bottom: 0;
+}
+
+.ReactWindow__Grid {
+    overflow: hidden !important;
+}
+
+/* #root {
+    scrollbar-width: none;
+} */
+
+.hide-scrollbar {
+    scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.dashboard-wrapper {
+    width: 100%;
+    overflow-x: hidden;
+}

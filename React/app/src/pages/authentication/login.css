@@ -1,0 +1,40 @@
+.login-card {
+    border: 1px solid #e4e7ec;
+    border-radius: 16px;
+    padding: 50px 60px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.login-box {
+    width: 100%;
+    max-width: 380px;
+}
+
+.login-title {
+    font-size: 36px;
+}
+
+.login-subtitle {
+    font-size: 14px;
+}
+
+.sub-heading {
+    color: rgb(52, 64, 84);
+    font-weight: 400;
+}
+
+.input-group:focus-within {
+    border: 1px solid #86b7fe;
+    border-radius: 0.375rem;
+    box-shadow: 0 0 0 .25rem rgba(13,110,253,.25);
+}
+
+.input-group .form-control:focus {
+    box-shadow: none;
+}
+
+.input-group .input-group-text {
+    border-left: 0 !important;
+    background: #fff;
+}

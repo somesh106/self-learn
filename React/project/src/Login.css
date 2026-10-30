@@ -1,0 +1,51 @@
+.para-font  {
+    font-size: 14px;
+    color: rgb(102 112 133)
+}
+
+.heading-font {
+    font-size: x-large;
+}
+
+.title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.sub-heading {
+    color: rgb(52, 64, 84);
+    font-weight: 400;   
+    height: 20px;
+}
+
+/* remove underline */
+.link-style {
+    text-decoration: none;
+}
+
+/* remove undnerline during mouse hover on link */
+.link-style:hover {
+    text-decoration: none;
+}
+
+/* TO make focus on the eye box */
+.input-group:focus-within {
+    border: 1px solid #86b7fe;
+    border-radius: 6px;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, .25);
+}
+
+.input-group .form-control:focus {
+    box-shadow: none;
+}
+
+/* remove center line */
+.input-group .form-control {
+    border-right: 0;
+}
+
+/* .input-group .input-group-text {
+    border-left: 0;  
+    background: white;
+} */

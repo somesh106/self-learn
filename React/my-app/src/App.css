@@ -1,0 +1,43 @@
+#center {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  place-content: center;
+  place-items: center;
+  flex-grow: 1;
+
+
+  @media (max-width: 1024px) {
+    padding: 32px 20px 24px;
+    gap: 18px;
+  }
+}
+
+/* .myclass {
+  color: red;
+  background-color: aqua;
+  width: 30rem;
+  margin: auto;
+}
+.portal {
+  background-color: aqua; */
+  /* width: auto;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  border-radius: 5px solid black;
+  
+}
+
+.portal2 {
+  width: 10px;
+  border-radius: 8px;
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 8px;
+} */
